@@ -4,7 +4,7 @@ Prototype Streamlit untuk Jaya Jaya Institut (institusi fiktif dari proyek latih
 seorang siswa dropout dari 13 isian akademik, keuangan, dan profil, sehingga siswa yang berisiko dapat dibimbing lebih
 awal.
 
-Aplikasi online: (tautan aplikasi menyusul)
+Aplikasi online: https://jaya-jaya-institut-dropout-ecs63k8ckwmdxegclvmdbs.streamlit.app
 
 ## Fitur
 
