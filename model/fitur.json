@@ -1,0 +1,262 @@
+{
+  "versi": 1,
+  "target": "Status",
+  "kelas_positif": "Dropout",
+  "model": "Logistic Regression",
+  "ambang": 0.5,
+  "metrik": {
+    "akurasi": 0.9215,
+    "precision": 0.8721,
+    "recall": 0.9366,
+    "f1": 0.9032
+  },
+  "pustaka": {
+    "python": "3.11.15",
+    "scikit-learn": "1.2.2",
+    "pandas": "2.3.3",
+    "numpy": "1.26.4",
+    "joblib": "1.3.1"
+  },
+  "fitur": [
+    {
+      "nama": "Curricular_units_1st_sem_enrolled",
+      "label": "Mata kuliah diambil, semester 1",
+      "kelompok": "akademik",
+      "tipe": "int",
+      "min": 0,
+      "max": 26,
+      "default": 6,
+      "bantuan": "Jumlah mata kuliah yang diambil siswa pada semester 1."
+    },
+    {
+      "nama": "Curricular_units_1st_sem_approved",
+      "label": "Mata kuliah lulus, semester 1",
+      "kelompok": "akademik",
+      "tipe": "int",
+      "min": 0,
+      "max": 26,
+      "default": 5,
+      "bantuan": "Jumlah mata kuliah yang dinyatakan lulus pada semester 1."
+    },
+    {
+      "nama": "Curricular_units_1st_sem_grade",
+      "label": "Rata-rata nilai, semester 1",
+      "kelompok": "akademik",
+      "tipe": "float",
+      "min": 0.0,
+      "max": 18.88,
+      "default": 12.3,
+      "bantuan": "Rata-rata nilai semester 1 pada skala 0-20; isi 0 bila belum ada nilai."
+    },
+    {
+      "nama": "Curricular_units_2nd_sem_enrolled",
+      "label": "Mata kuliah diambil, semester 2",
+      "kelompok": "akademik",
+      "tipe": "int",
+      "min": 0,
+      "max": 23,
+      "default": 6,
+      "bantuan": "Jumlah mata kuliah yang diambil siswa pada semester 2."
+    },
+    {
+      "nama": "Curricular_units_2nd_sem_approved",
+      "label": "Mata kuliah lulus, semester 2",
+      "kelompok": "akademik",
+      "tipe": "int",
+      "min": 0,
+      "max": 20,
+      "default": 5,
+      "bantuan": "Jumlah mata kuliah yang dinyatakan lulus pada semester 2."
+    },
+    {
+      "nama": "Curricular_units_2nd_sem_grade",
+      "label": "Rata-rata nilai, semester 2",
+      "kelompok": "akademik",
+      "tipe": "float",
+      "min": 0.0,
+      "max": 18.58,
+      "default": 12.2,
+      "bantuan": "Rata-rata nilai semester 2 pada skala 0-20; isi 0 bila belum ada nilai."
+    },
+    {
+      "nama": "Admission_grade",
+      "label": "Nilai penerimaan",
+      "kelompok": "akademik",
+      "tipe": "float",
+      "min": 95.0,
+      "max": 190.0,
+      "default": 126.1,
+      "bantuan": "Nilai seleksi penerimaan pada skala 0-200."
+    },
+    {
+      "nama": "Course",
+      "label": "Program studi",
+      "kelompok": "akademik",
+      "tipe": "kategori",
+      "min": 33,
+      "max": 9991,
+      "default": 9500,
+      "bantuan": "Program studi yang diikuti siswa.",
+      "opsi": [
+        {
+          "nilai": 33,
+          "label": "Biofuel Production Technologies"
+        },
+        {
+          "nilai": 171,
+          "label": "Animation and Multimedia Design"
+        },
+        {
+          "nilai": 8014,
+          "label": "Social Service (evening attendance)"
+        },
+        {
+          "nilai": 9003,
+          "label": "Agronomy"
+        },
+        {
+          "nilai": 9070,
+          "label": "Communication Design"
+        },
+        {
+          "nilai": 9085,
+          "label": "Veterinary Nursing"
+        },
+        {
+          "nilai": 9119,
+          "label": "Informatics Engineering"
+        },
+        {
+          "nilai": 9130,
+          "label": "Equinculture"
+        },
+        {
+          "nilai": 9147,
+          "label": "Management"
+        },
+        {
+          "nilai": 9238,
+          "label": "Social Service"
+        },
+        {
+          "nilai": 9254,
+          "label": "Tourism"
+        },
+        {
+          "nilai": 9500,
+          "label": "Nursing"
+        },
+        {
+          "nilai": 9556,
+          "label": "Oral Hygiene"
+        },
+        {
+          "nilai": 9670,
+          "label": "Advertising and Marketing Management"
+        },
+        {
+          "nilai": 9773,
+          "label": "Journalism and Communication"
+        },
+        {
+          "nilai": 9853,
+          "label": "Basic Education"
+        },
+        {
+          "nilai": 9991,
+          "label": "Management (evening attendance)"
+        }
+      ]
+    },
+    {
+      "nama": "Tuition_fees_up_to_date",
+      "label": "Biaya kuliah sudah dibayar sampai saat ini?",
+      "kelompok": "keuangan",
+      "tipe": "biner",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "bantuan": "Pilih Ya bila siswa tidak memiliki tunggakan biaya kuliah.",
+      "opsi": [
+        {
+          "nilai": 0,
+          "label": "Tidak"
+        },
+        {
+          "nilai": 1,
+          "label": "Ya"
+        }
+      ]
+    },
+    {
+      "nama": "Debtor",
+      "label": "Memiliki tunggakan (debitur)?",
+      "kelompok": "keuangan",
+      "tipe": "biner",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "bantuan": "Pilih Ya bila siswa tercatat sebagai debitur.",
+      "opsi": [
+        {
+          "nilai": 0,
+          "label": "Tidak"
+        },
+        {
+          "nilai": 1,
+          "label": "Ya"
+        }
+      ]
+    },
+    {
+      "nama": "Scholarship_holder",
+      "label": "Penerima beasiswa?",
+      "kelompok": "keuangan",
+      "tipe": "biner",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "bantuan": "Pilih Ya bila siswa menerima beasiswa.",
+      "opsi": [
+        {
+          "nilai": 0,
+          "label": "Tidak"
+        },
+        {
+          "nilai": 1,
+          "label": "Ya"
+        }
+      ]
+    },
+    {
+      "nama": "Age_at_enrollment",
+      "label": "Usia saat mendaftar (tahun)",
+      "kelompok": "profil",
+      "tipe": "int",
+      "min": 17,
+      "max": 70,
+      "default": 20,
+      "bantuan": "Usia siswa pada saat pertama kali mendaftar."
+    },
+    {
+      "nama": "Gender",
+      "label": "Jenis kelamin",
+      "kelompok": "profil",
+      "tipe": "kategori",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "bantuan": "Jenis kelamin siswa menurut data pendaftaran.",
+      "opsi": [
+        {
+          "nilai": 0,
+          "label": "Perempuan"
+        },
+        {
+          "nilai": 1,
+          "label": "Laki-laki"
+        }
+      ]
+    }
+  ]
+}
